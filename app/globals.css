@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+/* Brand tokens — change these to re-theme the whole site. */
+@theme {
+  --color-bg: #0e1110;
+  --color-surface: #151918;
+  --color-ink: #f2f0e9;
+  --color-muted: #a9ada7;
+  --color-line: rgba(255, 255, 255, 0.1);
+  --color-accent: #8da69a;
+  --color-sand: #c8bba8;
+  --color-slate: #7d8a8f;
+
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+
+  --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--color-accent);
+  color: var(--color-bg);
+}
+
+:focus-visible {
+  outline: 1px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Eyebrow label */
+@utility eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+
+@utility container-x {
+  margin-inline: auto;
+  width: 100%;
+  max-width: 1360px;
+  padding-inline: 1.25rem;
+  @media (width >= 48rem) {
+    padding-inline: 2.5rem;
+  }
+}
+
+@utility field {
+  width: 100%;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--color-line);
+  padding: 0.9rem 0;
+  font-size: 1.05rem;
+  color: var(--color-ink);
+  border-radius: 0;
+  transition: border-color 0.3s;
+  &::placeholder {
+    color: color-mix(in oklab, var(--color-muted) 60%, transparent);
+  }
+  &:focus {
+    outline: none;
+    border-color: var(--color-accent);
+  }
+}
