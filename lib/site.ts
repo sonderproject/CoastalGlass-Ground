@@ -23,7 +23,7 @@ export const nav = [
 export const images = {
   hero: "/images/hero.jpg" as string | null, // wide shot: storefront or modern glass in coastal light
   windows: "/images/windows.jpg" as string | null, // squeegee on large glass pane
-  pressure: null as string | null, // clean sidewalk / entryway
+  pressure: "/images/pressure.jpg" as string | null, // clean sidewalk / entryway
   detail: null as string | null, // tidy exterior, planters, entry
   recurring: null as string | null, // office or restaurant frontage
   commercial: null as string | null, // tall commercial glass facade
@@ -104,18 +104,6 @@ export const services = [
     body: "Sidewalks, entryways, patios, exterior surfaces, and high-traffic areas.",
     image: images.pressure,
     tone: "stone" as const,
-  },
-  {
-    title: "Property Detail",
-    body: "Light exterior cleanup and finishing touches that keep your property looking maintained.",
-    image: images.detail,
-    tone: "sea" as const,
-  },
-  {
-    title: "Recurring Commercial Service",
-    body: "Flexible maintenance plans for businesses and properties that need consistent presentation.",
-    image: images.recurring,
-    tone: "dusk" as const,
   },
 ];
 
