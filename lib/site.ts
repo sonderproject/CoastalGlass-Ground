@@ -12,10 +12,7 @@ export const site = {
 export const nav = [
   { label: "Services", href: "/#services" },
   { label: "Plans", href: "/#plans" },
-  { label: "Commercial", href: "/#commercial" },
-  { label: "About", href: "/#about" },
   { label: "FAQ", href: "/#faq" },
-  { label: "Contact", href: "/#contact" },
 ];
 
 // Photos: drop files in /public/images and set the paths below
@@ -24,11 +21,6 @@ export const images = {
   hero: "/images/hero.jpg" as string | null, // wide shot: storefront or modern glass in coastal light
   windows: "/images/windows.jpg" as string | null, // squeegee on large glass pane
   pressure: "/images/pressure.jpg" as string | null, // clean sidewalk / entryway
-  detail: null as string | null, // tidy exterior, planters, entry
-  recurring: null as string | null, // office or restaurant frontage
-  commercial: null as string | null, // tall commercial glass facade
-  before: null as string | null, // same window, dirty
-  after: null as string | null, // same window, clean
 };
 
 export type Plan = {
@@ -132,15 +124,4 @@ export const faqs = [
     q: "Can I combine window cleaning with other exterior services?",
     a: "Yes. Depending on the property, we can bundle window cleaning with pressure washing and light exterior cleanup.",
   },
-];
-
-export const areas = [
-  "San Diego",
-  "Downtown San Diego",
-  "Mission Valley",
-  "Point Loma",
-  "Coronado",
-  "National City",
-  "Chula Vista",
-  "La Mesa",
 ];
