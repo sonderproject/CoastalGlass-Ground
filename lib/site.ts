@@ -21,7 +21,7 @@ export const nav = [
 // Photos: drop files in /public/images and set the paths below
 // (e.g. hero: "/images/hero.jpg"). Leave null to show the styled placeholder.
 export const images = {
-  hero: null as string | null, // wide shot: storefront or modern glass in coastal light
+  hero: "/images/hero.jpg" as string | null, // wide shot: storefront or modern glass in coastal light
   windows: null as string | null, // squeegee on large glass pane
   pressure: null as string | null, // clean sidewalk / entryway
   detail: null as string | null, // tidy exterior, planters, entry
