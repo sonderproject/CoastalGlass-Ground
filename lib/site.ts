@@ -22,7 +22,7 @@ export const nav = [
 // (e.g. hero: "/images/hero.jpg"). Leave null to show the styled placeholder.
 export const images = {
   hero: "/images/hero.jpg" as string | null, // wide shot: storefront or modern glass in coastal light
-  windows: null as string | null, // squeegee on large glass pane
+  windows: "/images/windows.jpg" as string | null, // squeegee on large glass pane
   pressure: null as string | null, // clean sidewalk / entryway
   detail: null as string | null, // tidy exterior, planters, entry
   recurring: null as string | null, // office or restaurant frontage
